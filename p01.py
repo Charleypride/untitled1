@@ -14,4 +14,7 @@ class Student():
 def sayHello():
     print("Hi,欢迎来到安庆师范大学")
 
-print("我是模块p01，我是第一次学习使用模块")
+# 此判断语句建议一直作为程序的入口
+if __name__ == '__main__':
+
+    print("我是模块p01，我是第一次学习使用模块")

@@ -1,11 +1,9 @@
-class Person():
-    def fget(self):
-        pass
-    def fset(self,age):
-        self._age = int()
-    def fdel(self):
-        pass
-    age = property(fget,fset,fdel,"对age操作了")
-p2 = Person()
-p2.age = 18.95
-print(p2.age)
+# 借助于importlib包可以实现导入以数字开头的模块名称
+import importlib
+
+# 相当于导入了一个叫01的模块并把导入模块赋值给了aqnu
+aqnu = importlib.import_module("01")
+
+stu = aqnu.Student()
+
+stu.say()
